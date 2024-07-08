@@ -3,7 +3,6 @@ services:
   - docker
 
 before_install:
-  # - docker build -t $DOCKER_USERNAME/$DOCKER_REPOSITORY:$TRAVIS_BUILD_
   - docker build -t khalid/docker-react -f Dockerfile.dev .
 
 script:
